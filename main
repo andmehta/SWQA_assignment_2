@@ -1,12 +1,14 @@
-#imports here
+# imports here
+from bmi import bmi
+
 
 def main():
     print("welcome to the main menu\n")
 
-    print()
-
-
-
+    print(bmi(6, 2, 180))
+    print(bmi(1, 5, 30))
+    print(bmi(4, 10, 100))
+    print(bmi(10, 4, 200))
 
 
 if __name__ == "__main__":

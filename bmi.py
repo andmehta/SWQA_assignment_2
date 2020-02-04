@@ -12,16 +12,17 @@ def bmi(height_f, height_i, weight):
 
     kg = convert_to_kg(weight)
 
-    bmi_value = kg/height_m**2
+    bmi_value = round(kg/height_m**2, 1)
     if 0 < bmi_value < 18.5:
         category = "Underweight"
 
     if 18.5 <= bmi_value < 25:
         category = "Normal"
 
-    if 25 >= bmi_value < 30:
+    if 25 <= bmi_value < 30:
         category = "Overweight"
 
     if bmi_value >= 30:
         category = "Obese"
+
     return bmi_value, category
