@@ -2,17 +2,20 @@
 
 
 def show_menu():
-    print("\"bmi\": to calculate BMI and determine if underweight, normal, or overweight")
+    print("\"bmi\": to calculate BMI and determine if underweight, normal, or overweight.")
+    print("\"retire\": calculate retirement age based off current age, annual salary, and percentage saved.")
     print("\"end\": to close program\n")
 
 
 def main():
-    print("welcome to the main menu\n")
+    print("welcome to the main menu")
 
+    # initialize option before using in while loop
     option = "placeholder"
+
     print("type \"menu\" to see all available options")
     while option != "end":
-        option = input("what would you like to do?: ")
+        option = input("\nWhat would you like to do?: ")
 
         if option == "menu":
             show_menu()
@@ -21,7 +24,16 @@ def main():
             weight = input("What is your weight?: ")
             height_f = input("What is your height in feet?: ")
             height_in = input("What is your height in inches?: ")
-            # bmi_value = bmi(height_f, height_in, weight)
+            # bmi_value, category = bmi(height_f, height_in, weight)
+            # print("BMI: ", bmi, "\nCategory: ", category)
+
+        if option == "retire":
+            age = input("What is your current age?: ")
+            salary = input("What is your annual salary?: ")
+            save = input("What is your percentage saved?: ")
+            desired_save = input("What is your desired retirement savings goal?: ")
+
+            # retire_age = retire(age, salary, save, desired save)
 
 
 if __name__ == "__main__":
