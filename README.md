@@ -11,6 +11,3 @@ this main menu is meant to be operable from a command line environment. Utilizin
 | `bmi` | run bmi calculator |
 | `retire` | run retirement calculator |
 | `end` | end program |
-
-
-
