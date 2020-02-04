@@ -18,7 +18,7 @@ BMI is then categorized by ranges of numbers
 
 | range | category |
 | ----- | -------- |
-| BMI < 18.5   | __underweight__ |
-| 18.5 <= BMI < 25 | __normal__ |
-| 25 <= BMI < 30 | __overweight__ |
-| BMI >= 30 | __Obese__ |
+| `bmi < 18.5`   | __underweight__ |
+| `18.5 <= bmi < 25` | __normal__ |
+| `25 <= bmi < 30` | __overweight__ |
+| `bmi >= 30` | __Obese__ |
