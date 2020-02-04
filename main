@@ -2,19 +2,26 @@
 
 
 def show_menu():
-    print("stuff here")
+    print("\"bmi\": to calculate BMI and determine if underweight, normal, or overweight")
+    print("\"end\": to close program\n")
 
 
 def main():
     print("welcome to the main menu\n")
 
-    option = input("what would you like to do?: ")
+    option = "placeholder"
+    print("type \"menu\" to see all available options")
+    while option != "end":
+        option = input("what would you like to do?: ")
 
-    if option == "menu":
-        show_menu()
+        if option == "menu":
+            show_menu()
 
-    if option == "bmi":
-        weight = input("what is your weight?: ")
+        if option == "bmi":
+            weight = input("What is your weight?: ")
+            height_f = input("What is your height in feet?: ")
+            height_in = input("What is your height in inches?: ")
+            # bmi_value = bmi(height_f, height_in, weight)
 
 
 if __name__ == "__main__":
