@@ -1,12 +1,20 @@
 #imports here
 
+
+def show_menu():
+    print("stuff here")
+
+
 def main():
     print("welcome to the main menu\n")
 
-    print()
+    option = input("what would you like to do?: ")
 
+    if option == "menu":
+        show_menu()
 
-
+    if option == "bmi":
+        weight = input("what is your weight?: ")
 
 
 if __name__ == "__main__":
