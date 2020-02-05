@@ -23,11 +23,8 @@ def category_check(value):
 # bmi is kg/(m)^2
 def bmi(height_f, height_i, weight):
     height_m = convert_to_meters(height_f, height_i)
-
     kg = convert_to_kg(weight)
-
     bmi_value = round(kg/height_m**2, 1)
-
     category = category_check(bmi_value)
 
     return bmi_value, category
