@@ -35,3 +35,6 @@ Finally using these metric numbers, BMI is calculated by dividing mass (`kg`) by
 
 BMI is then categorized by ranges of numbers shown above. 
 
+## Retirement Calculator
+calculates ability to retire based on current age, annual salary, percentage of salary saved, and desired retirement savings goal. Assumes 35% matching of savings by employer and death by 100. 
+
