@@ -1,4 +1,5 @@
-#imports here
+# imports here
+from bmi import bmi
 
 
 def show_menu():
@@ -24,8 +25,8 @@ def main():
             weight = input("What is your weight?: ")
             height_f = input("What is your height in feet?: ")
             height_in = input("What is your height in inches?: ")
-            # bmi_value, category = bmi(height_f, height_in, weight)
-            # print("BMI: ", bmi, "\nCategory: ", category)
+            bmi_value, category = bmi(height_f, height_in, weight)
+            print("BMI: ", bmi_value, "\nCategory: ", category)
 
         if option == "retire":
             age = input("What is your current age?: ")
