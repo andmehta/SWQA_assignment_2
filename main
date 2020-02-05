@@ -25,15 +25,15 @@ def main():
 
         if option == "bmi":
             weight = float(input("What is your weight?: "))
-            if weight <= 0 or weight is not float:
+            if weight <= 0:
                 print("Invalid weight")
                 break
             height_f = float(input("What is your height in feet?: "))
-            if height_f <= 0 or height_f is not float:
+            if height_f <= 0:
                 print("Invalid height")
                 break
             height_in = float(input("What is your height in inches?: "))
-            if height_in <= 0 or height_in is not float:
+            if height_in <= 0:
                 print("Invalid height")
                 break
             bmi_value, category = bmi(height_f, height_in, weight)
@@ -41,27 +41,27 @@ def main():
 
         if option == "retire":
             age = int(input("What is your current age?: "))
-            if age > 100 or age <= 0 or age is not int:
+            if age > 100 or age <= 0:
                 print("Invalid age")
                 break
 
             salary = float(input("What is your annual salary?: "))
-            if salary <= 0 or salary is not float:
+            if salary <= 0:
                 print("Invalid salary")
                 break
 
             save = float(input("What is your percentage saved?: "))
-            if save >= 1 or save <= 0 or save is not float:
+            if save >= 1 or save <= 0:
                 print("Invalid percent saved")
                 break
 
             desired_save = float(input("What is your desired retirement savings goal?: "))
-            if desired_save < 0 or desired_save is not float:
+            if desired_save < 0:
                 print("Invalid goal")
                 break
 
             retire_age = int(retire(age, salary, save, desired_save))
-            if retire_age > 0 or retire_age is not int:
+            if retire_age > 0:
                 print("You will retire at", retire_age, ".")
             else:
                 print("You will not save enough, increase percentage saved or start getting paid more.")
