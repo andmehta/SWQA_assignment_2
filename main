@@ -1,10 +1,12 @@
 # imports here
 from bmi import bmi
+from retire import retire
 
 
 def show_menu():
     print("\"bmi\": to calculate BMI and determine if underweight, normal, or overweight.")
     print("\"retire\": calculate retirement age based off current age, annual salary, and percentage saved.")
+    print("\"menu\": to see all available options")
     print("\"end\": to close program\n")
 
 
@@ -22,19 +24,47 @@ def main():
             show_menu()
 
         if option == "bmi":
-            weight = input("What is your weight?: ")
-            height_f = input("What is your height in feet?: ")
-            height_in = input("What is your height in inches?: ")
+            weight = float(input("What is your weight?: "))
+            if weight <= 0 or weight is not float:
+                print("Invalid weight")
+                break
+            height_f = float(input("What is your height in feet?: "))
+            if height_f <= 0 or height_f is not float:
+                print("Invalid height")
+                break
+            height_in = float(input("What is your height in inches?: "))
+            if height_in <= 0 or height_in is not float:
+                print("Invalid height")
+                break
             bmi_value, category = bmi(height_f, height_in, weight)
             print("BMI: ", bmi_value, "\nCategory: ", category)
 
         if option == "retire":
-            age = input("What is your current age?: ")
-            salary = input("What is your annual salary?: ")
-            save = input("What is your percentage saved?: ")
-            desired_save = input("What is your desired retirement savings goal?: ")
+            age = int(input("What is your current age?: "))
+            if age > 100 or age <= 0 or age is not int:
+                print("Invalid age")
+                break
 
-            # retire_age = retire(age, salary, save, desired save)
+            salary = float(input("What is your annual salary?: "))
+            if salary <= 0 or salary is not float:
+                print("Invalid salary")
+                break
+
+            save = float(input("What is your percentage saved?: "))
+            if save >= 1 or save <= 0 or save is not float:
+                print("Invalid percent saved")
+                break
+
+            desired_save = float(input("What is your desired retirement savings goal?: "))
+            if desired_save < 0 or desired_save is not float:
+                print("Invalid goal")
+                break
+
+            retire_age = int(retire(age, salary, save, desired_save))
+            if retire_age > 0 or retire_age is not int:
+                print("You will retire at", retire_age, ".")
+            else:
+                print("You will not save enough, increase percentage saved or start getting paid more.")
 
 
 if __name__ == "__main__":
