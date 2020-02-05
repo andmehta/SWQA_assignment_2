@@ -38,3 +38,11 @@ BMI is then categorized by ranges of numbers shown above.
 ## Retirement Calculator
 calculates ability to retire based on current age, annual salary, percentage of salary saved, and desired retirement savings goal. Assumes 35% matching of savings by employer and death by 100. 
 
+| variable | description |
+| -------- | ----------- |
+| `age`   | age of person |
+| `salary` | annual salary of person |
+| `pct_saved` | percent of annual salary saved (must be between 0 and 1) |
+| `goal` | goal savings (will include employer matching) |
+
+`retire` returns `-1` if it's impossible to save to the goal before person turns 100, or returns age person will achieve saving goal.  
