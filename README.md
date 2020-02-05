@@ -1,8 +1,14 @@
 # Software Quality Assurance and Testing Assignment 2
-This whole assignment is designed to demonstrate a students ability to develop in a "test first" manner. 
+This assignment is designed to demonstrate a students ability to develop in a "test first" manner. 
 
+# How to run
+Just double click the `main.py` in the directory. 
+Ensure that `retire.py` and `bmi.py` also exist in the directory along with `main.py`. 
+
+# Code explanation
 ## main menu
-this main menu is meant to be operable from a command line environment. Utilizing a simple text check, will execute based upon user input. 
+this main menu is meant to be operable from a command line environment. 
+Utilizing a simple text check, will execute based upon user input. 
 
 ### possible inputs
 | input | action |
@@ -22,7 +28,6 @@ this section includes the functions for a BMI calculator using inputs such as
 | `height_i` | height measurable in inches |
 
 these inputs get converted to metric using the functions `convert_to_meters` and `convert_to_kg` functions. 
-
 Finally using these metric numbers, BMI is calculated by dividing mass (`kg`) by height<sup>2</sup> (`height_m`)
 
 ### BMI ranges
@@ -36,7 +41,8 @@ Finally using these metric numbers, BMI is calculated by dividing mass (`kg`) by
 BMI is then categorized by ranges of numbers shown above. 
 
 ## Retirement Calculator
-calculates ability to retire based on current age, annual salary, percentage of salary saved, and desired retirement savings goal. Assumes 35% matching of savings by employer and death by 100. 
+calculates ability to retire based on current age, annual salary, percentage of salary saved, and desired retirement savings goal. 
+Assumes 35% matching of savings by employer and death by 100. 
 
 | variable | description |
 | -------- | ----------- |
