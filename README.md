@@ -25,13 +25,13 @@ these inputs get converted to metric using the functions `convert_to_meters` and
 
 Finally using these metric numbers, BMI is calculated by dividing mass (`kg`) by height<sup>2</sup> (`height_m`)
 
-BMI is then categorized by ranges of numbers
-
-
+### BMI ranges
 | range | category |
 | ----- | -------- |
 | `bmi < 18.5`   | __underweight__ |
 | `18.5 <= bmi < 25` | __normal__ |
 | `25 <= bmi < 30` | __overweight__ |
 | `bmi >= 30` | __Obese__ |
+
+BMI is then categorized by ranges of numbers shown above. 
 
