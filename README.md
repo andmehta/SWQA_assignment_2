@@ -2,8 +2,7 @@
 This assignment is designed to demonstrate a students ability to develop in a "test first" manner. 
 
 # How to run
-Just double click the `main.py` in the directory. 
-Ensure that `retire.py` and `bmi.py` also exist in the directory along with `main.py`. 
+Just double click the `main.exe` in the directory.  
 
 # Code explanation
 ## main menu
