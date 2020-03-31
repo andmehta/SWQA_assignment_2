@@ -1,0 +1,7 @@
+language: python
+
+before script: 
+  - pip install pylint
+  - pip install pytest
+  
+scripts: pytest test
