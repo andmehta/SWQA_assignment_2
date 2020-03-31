@@ -4,4 +4,7 @@ before script:
   - pip install pylint
   - pip install pytest
   
-scripts: pytest test
+scripts: {
+  - pylint --lint-msgs
+  - pytest test
+}
