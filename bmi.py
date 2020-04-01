@@ -13,7 +13,7 @@ def convert_to_kg(weight):
 
 
 def category_check(value):
-    if value < 0:
+    if value <= 0:
         print("Invalid BMI value")
         raise SystemExit
 

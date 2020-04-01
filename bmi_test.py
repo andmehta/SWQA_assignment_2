@@ -9,9 +9,8 @@ def test_convert_to_meters():
         convert_to_meters(0, 0)
     with pytest.raises(SystemExit):
         convert_to_meters(1, -1)
-    with pytest.raises(SystemExit):
-        convert_to_meters(1, 0)
-    assert convert_to_meters(5, 6) == 1.65
+    convert_to_meters(1, 0) == 0.3
+    assert convert_to_meters(5, 6) == pytest.approx(1.65)
 
 
 def test_convert_to_kg():
@@ -37,4 +36,6 @@ def test_category_check():
 
 
 def test_bmi():
-    assert bmi(1, 1, 1) == 4.3, "Underweight"
+    a, b = bmi(1, 1, 1)
+    assert a == 4.3 and b == "Underweight"
+
