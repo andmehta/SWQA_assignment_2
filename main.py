@@ -25,17 +25,8 @@ def main():
 
         if option == "bmi":
             weight = float(input("What is your weight?: "))
-            if weight <= 0:
-                print("Invalid weight")
-                break
             height_f = float(input("What is your height in feet?: "))
-            if height_f <= 0:
-                print("Invalid height")
-                break
             height_in = float(input("What is your height in inches?: "))
-            if height_in <= 0:
-                print("Invalid height")
-                break
             bmi_value, category = bmi(height_f, height_in, weight)
             print("BMI: ", bmi_value, "\nCategory: ", category)
 
