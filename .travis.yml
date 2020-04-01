@@ -4,6 +4,5 @@ before script:
   - pip install pylint
   - pip install pytest
   
-scripts: 
-  - pylint --lint-msgs
-  - pytest test
+scripts:
+  - pytest -q bmi_test.py
