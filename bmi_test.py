@@ -38,4 +38,5 @@ def test_category_check():
 def test_bmi():
     a, b = bmi(1, 1, 1)
     assert a == 4.3 and b == "Underweight"
-
+    a, b = bmi(6, 6, 300)
+    assert a == 35.5 and b == "Obese"
