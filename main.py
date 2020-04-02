@@ -28,16 +28,12 @@ def main():
             height_f = float(input("What is your height in feet?: "))
             height_in = float(input("What is your height in inches?: "))
             bmi_value, category = bmi(height_f, height_in, weight)
-            print("BMI: ", bmi_value, "\nCategory: ", category)
+            print("BMI:", bmi_value, "\nCategory:", category)
 
         if option == "retire":
             age = int(input("What is your current age?: "))
             salary = float(input("What is your annual salary?: "))
             save = float(input("What is your percentage saved?: "))
-            if save >= 1 or save <= 0:
-                print("Invalid percent saved")
-                break
-
             desired_save = float(input("What is your desired retirement savings goal?: "))
             retire_age = int(retire(age, salary, save, desired_save))
             if retire_age > 0:
