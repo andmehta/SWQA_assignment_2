@@ -1,12 +1,22 @@
 def convert_to_meters(feet, inches):
+    if feet <= 0 or inches < 0:
+        print("Invalid height")
+        raise SystemExit
     return (feet*12 + inches)*0.025
 
 
 def convert_to_kg(weight):
+    if weight <= 0:
+        print("Invalid weight")
+        raise SystemExit
     return weight*.45
 
 
 def category_check(value):
+    if value <= 0:
+        print("Invalid BMI value")
+        raise SystemExit
+
     if 0 < value < 18.5:
         return "Underweight"
 
