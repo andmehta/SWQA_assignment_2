@@ -2,7 +2,7 @@
 This assignment is designed to demonstrate a students ability to develop in a "test first" manner. 
 
 # How to run
-Just double click the `main.exe` in the directory.  
+You can find this code hosted [here](https://andmehta.github.io/SWQA_assignment_3/) using Github pages and the Pypy library for Javascript.  
 
 # Code explanation
 ## main menu
