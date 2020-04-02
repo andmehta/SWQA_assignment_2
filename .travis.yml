@@ -7,3 +7,4 @@ before script:
 scripts:
   - pytest -q bmi_test.py
   - pytest -q retire_test.py
+  - pytest -q main_test.py
